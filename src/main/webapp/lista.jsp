@@ -1,4 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.List"%>
+<%@ page import="model.Persona"%>
+<%@ page import="services.GestioneRubricaService"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,17 +18,20 @@
             <th>Telefono</th>
             <th>Operazioni</th>
         </tr>
-        <%-- Inserire qui il codice per iterare sugli oggetti Persona --%>
-        <tr>
-            <td>1</td>
-            <td>Mario</td>
-            <td>Rossi</td>
-            <td>1234567890</td>
-            <td>
-                <a href="editor.jsp?id=1">Modifica</a>
-                <a href="delete.jsp?id=1">Elimina</a>
-            </td>
-        </tr>
+        <%
+            GestioneRubricaService service = new GestioneRubricaService();
+            List<Persona> lista = service.getAllPersonas();
+            for (Persona persona : lista) {
+                out.println("<tr>");
+                out.println("<td>" + persona.getId() + "</td>");
+                out.println("<td>" + persona.getNome() + "</td>");
+                out.println("<td>" + persona.getCognome() + "</td>");
+                out.println("<td>" + persona.getTelefono() + "</td>");
+                out.println("<td><a href='editor.jsp?id=" + persona.getId() + "'>Modifica</a>");
+                out.println(" <a href='delete.jsp?id=" + persona.getId() + "'>Elimina</a></td>");
+                out.println("</tr>");
+            }
+        %>
     </table>
     <button onclick="window.location.href='editor.jsp'">NUOVO</button>
 </body>

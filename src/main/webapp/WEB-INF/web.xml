@@ -4,4 +4,18 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-</web-app>
+    <!-- Servlet Declaration -->
+    <servlet>
+      <servlet-name>PersonaServlet</servlet-name>
+      <servlet-class>servletsControllers.PersonaServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+      <servlet-name>PersonaServlet</servlet-name>
+      <url-pattern>/processPersona</url-pattern>
+    </servlet-mapping>
+
+    <!-- Other configurations can be added here if necessary -->
+  </web-app>
+
