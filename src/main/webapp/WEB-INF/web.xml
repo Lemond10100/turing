@@ -1,21 +1,53 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-    <!-- Servlet Declaration -->
-    <servlet>
-      <servlet-name>PersonaServlet</servlet-name>
-      <servlet-class>servletsControllers.PersonaServlet</servlet-class>
-    </servlet>
 
-    <!-- Servlet Mapping -->
-    <servlet-mapping>
-      <servlet-name>PersonaServlet</servlet-name>
-      <url-pattern>/processPersona</url-pattern>
-    </servlet-mapping>
+  <!-- Servlet Declaration for PersonaServlet -->
+  <servlet>
+    <servlet-name>PersonaServlet</servlet-name>
+    <servlet-class>servletsControllers.PersonaServlet</servlet-class>
+  </servlet>
 
-    <!-- Other configurations can be added here if necessary -->
-  </web-app>
+  <!-- Servlet Mapping for PersonaServlet -->
+  <servlet-mapping>
+    <servlet-name>PersonaServlet</servlet-name>
+    <url-pattern>/processPersona</url-pattern>
+  </servlet-mapping>
 
+  <!-- Servlet Declaration for DeletePersonaServlet -->
+  <servlet>
+    <servlet-name>DeletePersonaServlet</servlet-name>
+    <servlet-class>servletsControllers.DeletePersonaServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet Mapping for DeletePersonaServlet -->
+  <servlet-mapping>
+    <servlet-name>DeletePersonaServlet</servlet-name>
+    <url-pattern>/deletePersona</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddPersonaServlet</servlet-name>
+    <servlet-class>servletsControllers.AddPersonaServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet Mapping for DeletePersonaServlet -->
+  <servlet-mapping>
+    <servlet-name>GetPersonaServlet</servlet-name>
+    <url-pattern>/getPersona</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetPersonaServlet</servlet-name>
+    <servlet-class>servletsControllers.GetPersonaServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>AddPersonaServlet</servlet-name>
+    <url-pattern>/addPersona</url-pattern>
+  </servlet-mapping>
+
+  <!-- Other configurations can be added here if necessary -->
+</web-app>

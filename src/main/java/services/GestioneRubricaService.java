@@ -21,8 +21,10 @@ public class GestioneRubricaService {
     }
 
     public void aggiungiPersona(Persona persona) {
+        System.out.println("siamo in GestioneRubricaService,aggiungiPersona()");
         String sql = "INSERT INTO lista_contatti (nome, cognome, indirizzo, telefono, eta) VALUES (?, ?, ?, ?, ?)";
         try (Connection conn = DriverManager.getConnection(url, user, password);
+
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, persona.getNome());
             pstmt.setString(2, persona.getCognome());
@@ -35,7 +37,7 @@ public class GestioneRubricaService {
         }
     }
 
-    public void rimuoviPersona(int id) {
+    public void rimuoviPersona(Integer id) {
         String sql = "DELETE FROM lista_contatti WHERE id = ?";
         try (Connection conn = DriverManager.getConnection(url, user, password);
              PreparedStatement pstmt = conn.prepareStatement(sql)) {

@@ -1,16 +1,25 @@
 package model;
 
 public class Persona {
-    private int id;
+    private Integer id;
     private String nome;
     private String cognome;
     private String indirizzo;
     private String telefono;
     private int eta;
 
+    public Persona(){}
 
-    public Persona(int id, String nome, String cognome, String indirizzo, String telefono, int eta) {
-        this.id = id;
+    public Persona( String nome, String cognome, String indirizzo, String telefono, int eta) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.indirizzo = indirizzo;
+        this.telefono = telefono;
+        this.eta = eta;
+    }
+
+    public Persona( Integer id,String nome, String cognome, String indirizzo, String telefono, int eta) {
+        this.id=id;
         this.nome = nome;
         this.cognome = cognome;
         this.indirizzo = indirizzo;
@@ -19,8 +28,9 @@ public class Persona {
     }
 
 
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+
+    public Integer getId() { return id; }
+    public void setId (Integer id) { this.id = id; }
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
     public String getCognome() { return cognome; }

@@ -26,13 +26,21 @@
                 out.println("<td>" + persona.getId() + "</td>");
                 out.println("<td>" + persona.getNome() + "</td>");
                 out.println("<td>" + persona.getCognome() + "</td>");
+                out.println("<td>" + persona.getIndirizzo() + "</td>");
                 out.println("<td>" + persona.getTelefono() + "</td>");
-                out.println("<td><a href='editor.jsp?id=" + persona.getId() + "'>Modifica</a>");
-                out.println(" <a href='delete.jsp?id=" + persona.getId() + "'>Elimina</a></td>");
+                out.println("<td>");
+                out.println("<a href='editor.jsp?id=" + persona.getId() + "'>Modifica</a> ");
+                out.println("<form method='POST' action='deletePersona' style='display:inline;'>");
+                out.println("<input type='hidden' name='id' value='" + persona.getId() + "' />");
+                out.println("<input type='submit' value='Elimina' />");
+                out.println("</form>");
+
+                out.println("</td>");
                 out.println("</tr>");
             }
         %>
     </table>
     <button onclick="window.location.href='editor.jsp'">NUOVO</button>
+
 </body>
 </html>
