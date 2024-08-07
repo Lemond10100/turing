@@ -49,5 +49,18 @@
     <url-pattern>/addPersona</url-pattern>
   </servlet-mapping>
 
+
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servletsControllers.LoginServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet Mapping for LoginServlet -->
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/performLogin</url-pattern>
+  </servlet-mapping>
+
   <!-- Other configurations can be added here if necessary -->
 </web-app>

@@ -4,23 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push2, driver funzionante, getAll funzionante">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/DeletePersonaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" afterDir="false" />
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push3, add funzionante ed elimina funzionante">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/DbCredenzialiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/SignupServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/messageAfterFailedLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/numberAlreadyExists.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.smarttomcat/turing3/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.smarttomcat/turing3/conf/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/PersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/PersonaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -75,7 +87,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Colors"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -88,6 +100,9 @@
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp\WEB-INF\model" />
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp\my_app" />
+    </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="services.GestioneRubricaService" />
     </key>
   </component>
   <component name="RunManager" selected="Smart Tomcat.startTomcatTuring3">
@@ -196,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722943899146</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="push3, add funzionante ed elimina funzionante">
+      <option name="closed" value="true" />
+      <created>1722962461665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722962461665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,7 +236,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="master working,1 push" />
     <MESSAGE value="push2, driver funzionante, getAll funzionante" />
-    <option name="LAST_COMMIT_MESSAGE" value="push2, driver funzionante, getAll funzionante" />
+    <MESSAGE value="push3, add funzionante ed elimina funzionante" />
+    <option name="LAST_COMMIT_MESSAGE" value="push3, add funzionante ed elimina funzionante" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

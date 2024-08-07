@@ -15,8 +15,8 @@
             <th>ID</th>
             <th>Nome</th>
             <th>Cognome</th>
+            <th>Indirizzo</th>
             <th>Telefono</th>
-            <th>Operazioni</th>
         </tr>
         <%
             GestioneRubricaService service = new GestioneRubricaService();
@@ -34,7 +34,6 @@
                 out.println("<input type='hidden' name='id' value='" + persona.getId() + "' />");
                 out.println("<input type='submit' value='Elimina' />");
                 out.println("</form>");
-
                 out.println("</td>");
                 out.println("</tr>");
             }

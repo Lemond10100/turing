@@ -19,6 +19,6 @@ public class GetPersonaServlet extends HttpServlet {
         List<Persona> listaPersonas = service.getAllPersonas();  // Retrieve all personas from the database
         
         request.setAttribute("personas", listaPersonas);  // Store the list in request scope
-        request.getRequestDispatcher("/displayPersonas.jsp").forward(request, response);  // Forward to JSP for display
+        request.getRequestDispatcher("/lista.jsp").forward(request, response);  // Forward to JSP for display
     }
 }
