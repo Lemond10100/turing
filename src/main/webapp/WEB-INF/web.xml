@@ -97,6 +97,15 @@
     <url-pattern>/logout</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>servletsControllers.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/indexServlet</url-pattern>
+  </servlet-mapping>
 
-  <!-- Other configurations can be added here if necessary -->
+
+
 </web-app>

@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push11,fix signup.jsp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/LogoutServlet.java" afterDir="false" />
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push12,fix aggiunto logout">
+      <change afterPath="$PROJECT_DIR$/src/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/IndexServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/SignupServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.smarttomcat/turing3/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.smarttomcat/turing3/conf/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/DbCredenzialiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/DatabaseConfigurationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="env/svil" />
+        <entry key="$PROJECT_DIR$" value="feature/fromSvil1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,23 +66,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.turing3 [clean,validate,compile,test...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Shell Script.STARTtomcat.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.STOPtomcat.executor&quot;: &quot;Run&quot;,
-    &quot;Smart Tomcat.startTomcatTuring3.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/fromSvil1&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/domenico/IdeaProjects/turing3/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.turing3 [clean,validate,compile,test...].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.STARTtomcat.executor": "Run",
+    "Shell Script.STOPtomcat.executor": "Run",
+    "Smart Tomcat.startTomcatTuring3.executor": "Run",
+    "git-widget-placeholder": "feature/appFunzionante",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/domenico/IdeaProjects/turing3/src/main/webapp",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp" />
@@ -263,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723139765321</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="push12,fix aggiunto logout">
+      <option name="closed" value="true" />
+      <created>1723142758502</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723142758502</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +301,8 @@
     <MESSAGE value="push9,fix numberExisting" />
     <MESSAGE value="push10,fix lista.jsp" />
     <MESSAGE value="push11,fix signup.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="push11,fix signup.jsp" />
+    <MESSAGE value="push12,fix aggiunto logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="push12,fix aggiunto logout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
