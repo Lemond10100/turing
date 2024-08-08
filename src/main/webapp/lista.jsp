@@ -16,6 +16,8 @@
             <th>Cognome</th>
             <th>Indirizzo</th>
             <th>Telefono</th>
+            <th>Eta</th>
+            <th>Operazioni</th>
         </tr>
         <%
             List<Persona> lista = (List<Persona>) request.getAttribute("personas");
@@ -27,6 +29,7 @@
                     out.println("<td>" + persona.getCognome() + "</td>");
                     out.println("<td>" + persona.getIndirizzo() + "</td>");
                     out.println("<td>" + persona.getTelefono() + "</td>");
+                    out.println("<td>" + persona.getEta() + "</td>");
                     out.println("<td>");
                     out.println("<a href='editor.jsp?id=" + persona.getId() + "'>Modifica</a> ");
                     out.println("<form method='POST' action='deletePersona' style='display:inline;'>");
