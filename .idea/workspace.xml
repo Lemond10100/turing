@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push3, add funzionante ed elimina funzionante">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/DbCredenzialiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/SignupServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/messageAfterFailedLogin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/numberAlreadyExists.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push5, solo la modifica perfchè sfuggita. ancora non funzionante">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.smarttomcat/turing3/conf/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.smarttomcat/turing3/conf/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,23 +60,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.turing3 [clean,validate,compile,test...].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Shell Script.STARTtomcat.executor": "Run",
-    "Shell Script.STOPtomcat.executor": "Run",
-    "Smart Tomcat.startTomcatTuring3.executor": "Run",
-    "git-widget-placeholder": "env/svil",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/domenico/IdeaProjects/turing3/src/main/webapp",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.turing3 [clean,validate,compile,test...].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Shell Script.STARTtomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.STOPtomcat.executor&quot;: &quot;Run&quot;,
+    &quot;Smart Tomcat.startTomcatTuring3.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;env/svil&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domenico/IdeaProjects/turing3/src/main/webapp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp" />
@@ -165,6 +152,9 @@
       <option name="catalinaBase" value="C:\Users\domenico\.SmartTomcat\turing3\turing3" />
       <option name="contextPath" value="/turing3" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -219,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722962461665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="push5, solo la modifica perfchè sfuggita. ancora non funzionante">
+      <option name="closed" value="true" />
+      <created>1723051699795</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723051699795</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +235,8 @@
     <MESSAGE value="master working,1 push" />
     <MESSAGE value="push2, driver funzionante, getAll funzionante" />
     <MESSAGE value="push3, add funzionante ed elimina funzionante" />
-    <option name="LAST_COMMIT_MESSAGE" value="push3, add funzionante ed elimina funzionante" />
+    <MESSAGE value="push5, solo la modifica perfchè sfuggita. ancora non funzionante" />
+    <option name="LAST_COMMIT_MESSAGE" value="push5, solo la modifica perfchè sfuggita. ancora non funzionante" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

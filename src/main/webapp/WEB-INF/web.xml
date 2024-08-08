@@ -62,5 +62,18 @@
     <url-pattern>/performLogin</url-pattern>
   </servlet-mapping>
 
+
+
+  <servlet>
+    <servlet-name>ModificaPersonaServlet</servlet-name>
+    <servlet-class>servletsControllers.ModificaPersonaServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>ModificaPersonaServlet</servlet-name>
+    <url-pattern>/modificaPersona</url-pattern>
+  </servlet-mapping>
+
   <!-- Other configurations can be added here if necessary -->
 </web-app>
