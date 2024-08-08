@@ -21,8 +21,16 @@ public class ModificaPersonaServlet extends HttpServlet {
         Persona persona = new Persona(id, nome, cognome, indirizzo, telefono, eta);
 
         GestioneRubricaService service = new GestioneRubricaService();
-        service.modificaPersona(persona);
 
-        response.sendRedirect("lista.jsp");
+        // Prima di procedere con la modifica, verifica se il numero di telefono è già utilizzato
+        boolean isDuplicate = service.isPhoneNumberExistExceptCurrent(telefono, id);
+        if (isDuplicate) {
+            request.setAttribute("errorMessage", "Il numero di telefono è già utilizzato da un'altra persona.");
+            request.getRequestDispatcher("numberAlreadyExists.jsp").forward(request, response);
+        } else {
+            // Se non ci sono duplicati, procedi con l'aggiornamento dei dati della persona
+            service.modificaPersona(persona);
+            response.sendRedirect("lista.jsp");
+        }
     }
 }

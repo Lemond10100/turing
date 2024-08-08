@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push5, solo la modifica perfchè sfuggita. ancora non funzionante">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor.jsp" afterDir="false" />
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente">
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/ModificaPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/ModificaPersonaServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723051699795</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente">
+      <option name="closed" value="true" />
+      <created>1723112198862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723112198862</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +243,8 @@
     <MESSAGE value="push2, driver funzionante, getAll funzionante" />
     <MESSAGE value="push3, add funzionante ed elimina funzionante" />
     <MESSAGE value="push5, solo la modifica perfchè sfuggita. ancora non funzionante" />
-    <option name="LAST_COMMIT_MESSAGE" value="push5, solo la modifica perfchè sfuggita. ancora non funzionante" />
+    <MESSAGE value="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

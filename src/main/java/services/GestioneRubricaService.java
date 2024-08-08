@@ -92,6 +92,28 @@ public class GestioneRubricaService {
         }
     }
 
+    public boolean isPhoneNumberExistExceptCurrent(String phoneNumber, int currentId) {
+        String query = "SELECT COUNT(*) FROM lista_contatti WHERE telefono = ? AND id <> ?";
+        try (Connection conn = DriverManager.getConnection(url, userdb, password);
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+
+            stmt.setString(1, phoneNumber);
+            stmt.setInt(2, currentId);
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(1) > 0;  // Controlla se il conteggio è maggiore di zero
+                }
+            }
+        } catch (SQLException e) {
+            System.err.println("Errore durante la verifica del numero di telefono: " + e.getMessage());
+            // Gestisci l'eccezione come preferisci, log, throw new runtime exception, ecc.
+        }
+        return false;  // Se la query non trova duplicati o si verifica un'eccezione
+    }
+
+
+
     public List<Persona> getAllPersonas() {
         List<Persona> personas = new ArrayList<>();
         String sql = "SELECT * FROM lista_contatti";
@@ -107,6 +129,15 @@ public class GestioneRubricaService {
             e.printStackTrace();
         }
         return personas;
+    }
+
+    private Persona getPersonaById(Integer id){
+        for(Persona persona :this.getAllPersonas()){
+            if(persona.getId()==id){
+                return persona;
+            }
+        }
+        return null;
     }
 
 
