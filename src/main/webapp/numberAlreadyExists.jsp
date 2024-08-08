@@ -7,6 +7,6 @@
 <body>
     <h1>Errore: Il numero di telefono è già presente nella rubrica.</h1>
     <p><%= request.getAttribute("message") %></p>
-    <button onclick="window.location.href='lista.jsp'">Torna alla Lista</button>
+    <button type="button" onclick="window.location.href='getPersona'">Torna alla Lista</button>
 </body>
 </html>
