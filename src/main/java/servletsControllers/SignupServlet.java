@@ -10,7 +10,7 @@ import services.GestioneRubricaService;
 
 import java.io.IOException;
 
-@WebServlet("/signup")
+
 public class SignupServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");

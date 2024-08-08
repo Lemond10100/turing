@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push10,fix lista.jsp">
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push11,fix signup.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/SignupServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723136857027</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="push11,fix signup.jsp">
+      <option name="closed" value="true" />
+      <created>1723139765321</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723139765321</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,7 +287,8 @@
     <MESSAGE value="push8,applicazione funzionante - logOut ancora non presente" />
     <MESSAGE value="push9,fix numberExisting" />
     <MESSAGE value="push10,fix lista.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="push10,fix lista.jsp" />
+    <MESSAGE value="push11,fix signup.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="push11,fix signup.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

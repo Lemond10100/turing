@@ -8,6 +8,7 @@
     <title>Rubrica</title>
 </head>
 <body>
+    <a href="logout">Logout</a> <!-- Link di Logout -->
     <h1>Rubrica Telefonica</h1>
     <table border="1">
         <tr>

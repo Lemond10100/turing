@@ -51,6 +51,18 @@
 
 
 
+
+  <servlet>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>servletsControllers.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+
+
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>servletsControllers.LoginServlet</servlet-class>
@@ -74,6 +86,17 @@
     <servlet-name>ModificaPersonaServlet</servlet-name>
     <url-pattern>/modificaPersona</url-pattern>
   </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>servletsControllers.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
 
   <!-- Other configurations can be added here if necessary -->
 </web-app>
