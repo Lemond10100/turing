@@ -21,7 +21,8 @@
         <label for="eta">Età:</label>
         <input type="number" id="eta" name="eta" value="<%= request.getParameter("eta") != null ? request.getParameter("eta") : "" %>" /><br>
         <button type="submit">SALVA</button>
-        <button type="button" onclick="window.location.href='lista.jsp'">ANNULLA</button>
+        <button type="button" onclick="window.location.href='getPersona'">ANNULLA</button>
+
     </form>
 </body>
 </html>

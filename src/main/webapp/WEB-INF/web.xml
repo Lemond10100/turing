@@ -33,16 +33,16 @@
   </servlet>
 
   <!-- Servlet Mapping for DeletePersonaServlet -->
-  <servlet-mapping>
-    <servlet-name>GetPersonaServlet</servlet-name>
-    <url-pattern>/getPersona</url-pattern>
-  </servlet-mapping>
 
   <servlet>
     <servlet-name>GetPersonaServlet</servlet-name>
     <servlet-class>servletsControllers.GetPersonaServlet</servlet-class>
   </servlet>
 
+  <servlet-mapping>
+    <servlet-name>GetPersonaServlet</servlet-name>
+    <url-pattern>/getPersona</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>AddPersonaServlet</servlet-name>

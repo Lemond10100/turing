@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente">
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push7,modifica adesso funzionante in toto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/GestioneRubricaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/DeletePersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/DeletePersonaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/GetPersonaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/ModificaPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/ModificaPersonaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="env/svil" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +77,7 @@
     &quot;Shell Script.STARTtomcat.executor&quot;: &quot;Run&quot;,
     &quot;Shell Script.STOPtomcat.executor&quot;: &quot;Run&quot;,
     &quot;Smart Tomcat.startTomcatTuring3.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;env/svil&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/fromSvil1&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/domenico/IdeaProjects/turing3/src/main/webapp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
@@ -151,9 +161,6 @@
       <option name="catalinaBase" value="C:\Users\domenico\.SmartTomcat\turing3\turing3" />
       <option name="contextPath" value="/turing3" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -224,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723112198862</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="push7,modifica adesso funzionante in toto">
+      <option name="closed" value="true" />
+      <created>1723114101452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723114101452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +259,8 @@
     <MESSAGE value="push3, add funzionante ed elimina funzionante" />
     <MESSAGE value="push5, solo la modifica perfchè sfuggita. ancora non funzionante" />
     <MESSAGE value="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="push6,modifica funzionante-ma se modifico il numero settando con un numero già esistente, l applicazione non si accorge che il numero è già presente. quando invece sono in aggiunta,viene rilevato ilduplicato correttamente" />
+    <MESSAGE value="push7,modifica adesso funzionante in toto" />
+    <option name="LAST_COMMIT_MESSAGE" value="push7,modifica adesso funzionante in toto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

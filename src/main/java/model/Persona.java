@@ -7,30 +7,26 @@ public class Persona {
     private String indirizzo;
     private String telefono;
     private int eta;
+    private String username;  // Aggiunta del campo username
 
-    public Persona(){}
-
-    public Persona( String nome, String cognome, String indirizzo, String telefono, int eta) {
+    public Persona(String nome, String cognome, String indirizzo, String telefono, int eta, String username) {
         this.nome = nome;
         this.cognome = cognome;
         this.indirizzo = indirizzo;
         this.telefono = telefono;
         this.eta = eta;
+        this.username = username;  // Imposta l'username tramite il costruttore
     }
 
-    public Persona( Integer id,String nome, String cognome, String indirizzo, String telefono, int eta) {
-        this.id=id;
-        this.nome = nome;
-        this.cognome = cognome;
-        this.indirizzo = indirizzo;
-        this.telefono = telefono;
-        this.eta = eta;
+    public Persona(Integer id, String nome, String cognome, String indirizzo, String telefono, int eta, String username) {
+        this(nome, cognome, indirizzo, telefono, eta, username);
+        this.id = id;  // Imposta anche l'id
     }
 
-
+    // Getter e Setter
 
     public Integer getId() { return id; }
-    public void setId (Integer id) { this.id = id; }
+    public void setId(Integer id) { this.id = id; }
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
     public String getCognome() { return cognome; }
@@ -41,7 +37,6 @@ public class Persona {
     public void setTelefono(String telefono) { this.telefono = telefono; }
     public int getEta() { return eta; }
     public void setEta(int eta) { this.eta = eta; }
-
-
-    // Costruttore, getter e setter vanno qui
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
 }
