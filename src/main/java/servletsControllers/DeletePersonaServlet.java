@@ -1,5 +1,4 @@
 package servletsControllers;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -7,7 +6,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import services.GestioneRubricaService;
 import services.UserService;
-
 import java.io.IOException;
 
 
