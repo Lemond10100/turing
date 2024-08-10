@@ -3,30 +3,63 @@
 <html>
 <head>
     <title>Configurazione Database</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 600px;
+            padding-top: 50px;
+            margin: auto;
+        }
+        .form-label {
+            margin-top: 10px;
+        }
+        .form-control {
+            margin-bottom: 10px; /* Spacing between inputs */
+        }
+        .btn-primary {
+            width: 100%; /* Full width */
+        }
+    </style>
 </head>
 <body>
-    <h1>Impostazioni di Connessione al Database</h1>
-    <form action="indexServlet" method="post">
-        <label for="dbHost">Host del Database:</label>
-        <input type="text" id="dbHost" name="dbHost" required><br>
+    <div class="container">
+        <h1 class="mb-4">Impostazioni di Connessione al Database</h1>
+        <form action="indexServlet" method="post">
+            <div class="mb-3">
+                <label for="dbHost" class="form-label">Host del Database:</label>
+                <input type="text" id="dbHost" name="dbHost" class="form-control" required>
+            </div>
 
-        <label for="dbPort">Porta del Database:</label>
-        <input type="text" id="dbPort" name="dbPort" required><br>
+            <div class="mb-3">
+                <label for="dbPort" class="form-label">Porta del Database:</label>
+                <input type="text" id="dbPort" name="dbPort" class="form-control" required>
+            </div>
 
-        <label for="dbUrl">URL del Database:</label>
-        <input type="text" id="dbUrl" name="dbUrl" required><br>
+            <div class="mb-3">
+                <label for="dbUrl" class="form-label">URL del Database:</label>
+                <input type="text" id="dbUrl" name="dbUrl" class="form-control" required>
+            </div>
 
-        <label for="dbUser">Username del Database:</label>
-        <input type="text" id="dbUser" name="dbUser" required><br>
+            <div class="mb-3">
+                <label for="dbUser" class="form-label">Username del Database:</label>
+                <input type="text" id="dbUser" name="dbUser" class="form-control" required>
+            </div>
 
-        <label for="dbPassword">Password del Database:</label>
-        <input type="password" id="dbPassword" name="dbPassword" required><br>
+            <div class="mb-3">
+                <label for="dbPassword" class="form-label">Password del Database:</label>
+                <input type="password" id="dbPassword" name="dbPassword" class="form-control" required>
+            </div>
 
-        <input type="submit" value="Procedi">
-    </form>
+            <button type="submit" class="btn btn-primary">Procedi</button>
+        </form>
 
-    <% if (request.getParameter("error") != null) { %>
-        <p style="color: red;">Credenziali errate, si prega di riprovare.</p>
-    <% } %>
+        <%-- Display error message if credentials are wrong --%>
+        <% if (request.getParameter("error") != null) { %>
+            <div class="alert alert-danger" role="alert">
+                Credenziali errate, si prega di riprovare.
+            </div>
+        <% } %>
+    </div>
 </body>
 </html>
