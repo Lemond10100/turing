@@ -42,9 +42,9 @@ public class AddPersonaServlet extends HttpServlet {
         if (!violations.isEmpty()) {
 
             System.out.println("validation checkings..");
-            request.setAttribute("persona", persona); // Include the persona object to repopulate the form
-            request.setAttribute("errors", violations); // Send validation errors back to the form
-            request.getRequestDispatcher("editor.jsp").forward(request, response); // Redirect back to the form page
+            request.setAttribute("persona", persona);
+            request.setAttribute("errors", violations);
+            request.getRequestDispatcher("editor.jsp").forward(request, response);
         } else {
             GestioneRubricaService service = new GestioneRubricaService();
             String result = service.aggiungiPersona(persona);
@@ -53,7 +53,7 @@ public class AddPersonaServlet extends HttpServlet {
                 response.sendRedirect("getPersona"); // Redirect to list page if successful
             } else if (result.equalsIgnoreCase(GestioneRubricaService.NUMERO_DI_TELEFONO_GIÀ_ESISTENTE_NELLA_RUBRICA)) {
                 request.setAttribute("message", "Numero di telefono già esistente nella rubrica.");
-                request.getRequestDispatcher("numberAlreadyExists.jsp").forward(request, response); // Forward to error page if the number exists
+                request.getRequestDispatcher("numberAlreadyExists.jsp").forward(request, response);
             }
         }
     }

@@ -3,7 +3,7 @@ package model;
 import javax.validation.constraints.*;
 
 public class Persona {
-    private Integer id; // L'ID generalmente non necessita di validazione se è autoincrementato
+    private Integer id;
 
     @NotBlank(message = "Il nome non può essere vuoto")
     @Size(min = 2, max = 100, message = "Il nome deve contenere tra 2 e 100 caratteri")
@@ -26,7 +26,7 @@ public class Persona {
 
     @NotBlank(message = "Il nome utente non può essere vuoto")
     @Size(min = 3, max = 30, message = "Il nome utente deve contenere tra 3 e 30 caratteri")
-    private String username;  // Aggiunta del campo username
+    private String username;
 
     public Persona(String nome, String cognome, String indirizzo, String telefono, int eta, String username) {
         this.nome = nome;

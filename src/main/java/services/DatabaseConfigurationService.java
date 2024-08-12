@@ -10,7 +10,7 @@ public class DatabaseConfigurationService {
         boolean userMatches = dbUser.equals(DatabaseConfig.getDbUser());
         boolean passwordMatches = dbPassword.equals(DatabaseConfig.getDbPassword());
 
-        // Ritorna true se tutti i parametri corrispondono, altrimenti false
+
         return hostMatches && portMatches && urlMatches && userMatches && passwordMatches;
     }
 

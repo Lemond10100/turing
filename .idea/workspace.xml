@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push16,last fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema_database.sql" afterDir="false" />
-    </list>
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push17,last fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +65,7 @@
     "Shell Script.STARTtomcat.executor": "Run",
     "Shell Script.STOPtomcat.executor": "Run",
     "Smart Tomcat.startTomcatTuring3.executor": "Run",
-    "git-widget-placeholder": "turing/applicazione__rubrica",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/domenico/IdeaProjects/turing3/src/main/webapp",
     "project.structure.last.edited": "Artifacts",
@@ -287,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723460425895</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="push17,last fixes">
+      <option name="closed" value="true" />
+      <created>1723466229367</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723466229367</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +319,8 @@
     <MESSAGE value="push12,fix aggiunto logout" />
     <MESSAGE value="push13,fix di credenziali database e configurazione&#10;adesso tutto tutto funzionante. manca solo di parte grafica" />
     <MESSAGE value="push16,last fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="push16,last fixes" />
+    <MESSAGE value="push17,last fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="push17,last fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

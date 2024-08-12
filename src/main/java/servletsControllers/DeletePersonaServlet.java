@@ -25,7 +25,7 @@ public class DeletePersonaServlet extends HttpServlet {
         Integer id = Integer.parseInt(request.getParameter("id"));
         GestioneRubricaService service = new GestioneRubricaService();
         service.rimuoviPersona(id, username);
-        response.sendRedirect("getPersona"); // Redirect to your JSP page that lists all personas
+        response.sendRedirect("getPersona");
     }
 }
 
