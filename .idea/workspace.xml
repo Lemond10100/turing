@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push15,fron end bootstrap completo e funzionante">
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push16,last fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema_database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/appFunzionante" />
+        <entry key="$PROJECT_DIR$" value="feature/appFunzionante2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +69,7 @@
     "Shell Script.STARTtomcat.executor": "Run",
     "Shell Script.STOPtomcat.executor": "Run",
     "Smart Tomcat.startTomcatTuring3.executor": "Run",
-    "git-widget-placeholder": "feature/appFunzionante2",
+    "git-widget-placeholder": "turing/applicazione__rubrica",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/domenico/IdeaProjects/turing3/src/main/webapp",
     "project.structure.last.edited": "Artifacts",
@@ -278,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723156444879</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="push16,last fixes">
+      <option name="closed" value="true" />
+      <created>1723460425895</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723460425895</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,7 +314,8 @@
     <MESSAGE value="push11,fix signup.jsp" />
     <MESSAGE value="push12,fix aggiunto logout" />
     <MESSAGE value="push13,fix di credenziali database e configurazione&#10;adesso tutto tutto funzionante. manca solo di parte grafica" />
-    <option name="LAST_COMMIT_MESSAGE" value="push13,fix di credenziali database e configurazione&#10;adesso tutto tutto funzionante. manca solo di parte grafica" />
+    <MESSAGE value="push16,last fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="push16,last fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
