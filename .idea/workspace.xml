@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push14,validation fixed-inizio di bootstrap">
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push15,fron end bootstrap completo e funzionante">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/messageAfterFailedLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/messageAfterFailedLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/numberAlreadyExists.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/numberAlreadyExists.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,33 +59,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.turing3 [clean,validate,compile,test...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Shell Script.STARTtomcat.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.STOPtomcat.executor&quot;: &quot;Run&quot;,
-    &quot;Smart Tomcat.startTomcatTuring3.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/appFunzionante2&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/domenico/IdeaProjects/turing3/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.turing3 [clean,install].executor": "Run",
+    "Maven.turing3 [clean,validate,compile,test...].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Shell Script.STARTtomcat.executor": "Run",
+    "Shell Script.STOPtomcat.executor": "Run",
+    "Smart Tomcat.startTomcatTuring3.executor": "Run",
+    "git-widget-placeholder": "feature/appFunzionante2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/domenico/IdeaProjects/turing3/src/main/webapp",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\java" />
+      <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main" />
+      <recent name="C:\Users\domenico\IdeaProjects\turing3\src" />
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp\static" />
       <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp" />
-      <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\java" />
-      <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp\WEB-INF\model" />
-      <recent name="C:\Users\domenico\IdeaProjects\turing3\src\main\webapp\WEB-INF" />
     </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="services.GestioneRubricaService" />
