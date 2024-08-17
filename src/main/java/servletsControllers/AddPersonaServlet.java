@@ -20,7 +20,7 @@ import java.util.Set;
 
 public class AddPersonaServlet extends HttpServlet {
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException");
         HttpSession session = request.getSession();
         UserService userService = new UserService();

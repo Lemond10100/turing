@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push18,removed comments" />
+    <list default="true" id="56837e28-1bdb-49d9-9975-2e809de98114" name="Changes" comment="push19,">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddPersonaServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestUno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servletsControllers/AddPersonaServlet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +63,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AddPersonaServletTest.executor": "Run",
+    "JUnit.AddPersonaServletTest.whenValidPersonaIsAdded_thenRedirectToList.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.turing3 [clean,install].executor": "Run",
     "Maven.turing3 [clean,validate,compile,test...].executor": "Run",
@@ -90,35 +97,24 @@
     </key>
   </component>
   <component name="RunManager" selected="Smart Tomcat.startTomcatTuring3">
-    <configuration name="STARTtomcat" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
-      <option name="SCRIPT_PATH" value="$USER_HOME$/Desktop/PROG_20-02-2024_training/apache-tomcat-10.1.26-windows-x64/apache-tomcat-10.1.26/bin/startup.bat" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$USER_HOME$/Desktop/PROG_20-02-2024_training/apache-tomcat-10.1.26-windows-x64/apache-tomcat-10.1.26" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
-      <option name="INTERPRETER_PATH" value="$PROJECT_DIR$/../../../../Windows/System32/WindowsPowerShell/v1.0/powershell.exe" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
+    <configuration name="AddPersonaServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="turing3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddPersonaServletTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="STOPtomcat" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
-      <option name="SCRIPT_PATH" value="$USER_HOME$/Desktop/PROG_20-02-2024_training/apache-tomcat-10.1.26-windows-x64/apache-tomcat-10.1.26/bin/shutdown.bat" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$USER_HOME$/Desktop/PROG_20-02-2024_training/apache-tomcat-10.1.26-windows-x64/apache-tomcat-10.1.26" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
-      <option name="INTERPRETER_PATH" value="$USER_HOME$/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
+    <configuration name="AddPersonaServletTest.whenValidPersonaIsAdded_thenRedirectToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="turing3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddPersonaServletTest" />
+      <option name="METHOD_NAME" value="whenValidPersonaIsAdded_thenRedirectToList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Unnamed" type="TestNG" nameIsGenerated="true">
       <module name="turing3" />
@@ -164,11 +160,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Shell Script.STOPtomcat" />
-      <item itemvalue="Shell Script.STARTtomcat" />
+      <item itemvalue="JUnit.AddPersonaServletTest" />
+      <item itemvalue="JUnit.AddPersonaServletTest.whenValidPersonaIsAdded_thenRedirectToList" />
       <item itemvalue="Smart Tomcat.startTomcatTuring3" />
       <item itemvalue="TestNG.Unnamed" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AddPersonaServletTest.whenValidPersonaIsAdded_thenRedirectToList" />
+        <item itemvalue="JUnit.AddPersonaServletTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -299,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723478988070</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="push19,">
+      <option name="closed" value="true" />
+      <created>1723479337525</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723479337525</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +339,8 @@
     <MESSAGE value="push16,last fixes" />
     <MESSAGE value="push17,last fixes" />
     <MESSAGE value="push18,removed comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="push18,removed comments" />
+    <MESSAGE value="push19," />
+    <option name="LAST_COMMIT_MESSAGE" value="push19," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
