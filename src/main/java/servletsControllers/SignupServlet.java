@@ -7,6 +7,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.User;
 import services.GestioneRubricaService;
+import services.UserService;
+
+import services.UserService;
 
 import java.io.IOException;
 
@@ -20,7 +23,7 @@ public class SignupServlet extends HttpServlet {
         user.setPassword(password);
 
         // Check if username already exists
-        GestioneRubricaService service = new GestioneRubricaService();
+        UserService service = new UserService();
         if (service.userExists(user)) {
             // Redirect back to signup with an error message
             response.sendRedirect("signup.jsp?error=Username already exists");

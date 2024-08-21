@@ -260,34 +260,7 @@ public class GestioneRubricaService {
 
         // Other methods...
 
-        public boolean userExists(User user) {
-            // Check if the username already exists in the database
-            String sql = "SELECT COUNT(*) FROM users WHERE username = ?";
-            try (Connection conn = getConnection();
-                 PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setString(1, user.getUsername());
-                ResultSet rs = pstmt.executeQuery();
-                if (rs.next()) {
-                    return rs.getInt(1) > 0;
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            return false;
-        }
 
-        public void addUser(User user) {
-            // Add the new user to the database
-            String sql = "INSERT INTO users (username, password) VALUES (?, ?)";
-            try (Connection conn = getConnection();
-                 PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setString(1, user.getUsername());
-                pstmt.setString(2, user.getPassword());
-                pstmt.executeUpdate();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
 
     public String getPasswordForUser(String username) {
         String sql = "SELECT password FROM users WHERE username = ?";

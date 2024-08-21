@@ -3,17 +3,8 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-  <!-- Servlet Declaration for PersonaServlet -->
-  <servlet>
-    <servlet-name>PersonaServlet</servlet-name>
-    <servlet-class>servletsControllers.PersonaServlet</servlet-class>
-  </servlet>
 
-  <!-- Servlet Mapping for PersonaServlet -->
-  <servlet-mapping>
-    <servlet-name>PersonaServlet</servlet-name>
-    <url-pattern>/processPersona</url-pattern>
-  </servlet-mapping>
+
 
   <!-- Servlet Declaration for DeletePersonaServlet -->
   <servlet>

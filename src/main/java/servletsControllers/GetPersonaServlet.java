@@ -12,26 +12,42 @@ import services.UserService;
 
 import java.io.IOException;
 import java.util.List;
+import model.User;
+import services.CookieUtil;
 
 
 public class GetPersonaServlet extends HttpServlet {
-    public GetPersonaServlet() {}
+    private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false); // Get existing session if present
+        // Retrieve the existing session, but don't create a new one if it doesn't exist
+        HttpSession session = request.getSession(false);
 
-        // Check if user is logged in
-        if (session == null || session.getAttribute("username") == null) {
-            response.sendRedirect("login.jsp"); // Redirect to login page if not logged in
+        // Check if the session exists and the user is authenticated
+        if (session == null || session.getAttribute("user") == null) {
+            System.out.println("Session is invalid or user not authenticated. Redirecting to login.");
+            response.sendRedirect("login.jsp?error=SessionExpired");
             return;
         }
 
-        String username = (String) session.getAttribute("username"); // Retrieve username from session
-        GestioneRubricaService service = new GestioneRubricaService();
-        UserService userService = new UserService();
-        // Retrieve only the personas associated with the logged-in user
-        List<Persona> listaPersonas = service.getAllPersonasForUser(username);
-        request.setAttribute("personas", listaPersonas); // Store the list in request scope
-        request.getRequestDispatcher("/lista.jsp").forward(request, response); // Forward to JSP for display
+        // Log session details for debugging purposes
+        System.out.println("Session ID in getPersona: " + session.getId());
+        String username = (String) session.getAttribute("user");
+        if (username != null) {
+            System.out.println("User retrieved from session in getPersona: " + username);
+        }
+
+        // Business logic to get the persona list
+        GestioneRubricaService gestioneRubricaService = new GestioneRubricaService();
+        List<Persona> listaPersonas = gestioneRubricaService.getAllPersonasForUser(username);
+        request.setAttribute("personas", listaPersonas);
+        // Forward to the JSP page or render response
+        request.getRequestDispatcher("/lista.jsp").forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // If there's any POST logic for getPersona, handle it here, or simply forward to doGet
+        doGet(request, response);
     }
 }
+

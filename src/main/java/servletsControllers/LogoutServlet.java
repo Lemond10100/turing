@@ -2,20 +2,27 @@ package servletsControllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.*;
+
 import java.io.IOException;
 
 
 public class LogoutServlet extends HttpServlet {
-    public LogoutServlet(){}
+    private static final long serialVersionUID = 1L;
+
+    public LogoutServlet() {}
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false); // Recupera la sessione se esiste
+        HttpSession session = request.getSession(false); // Retrieve the session if it exists
         if (session != null) {
-            session.invalidate(); // Invalida la sessione per rimuovere tutti gli attributi
+            session.invalidate(); // Invalidate the session to remove all attributes
+
+            // Clear the JSESSIONID cookie
+            Cookie sessionCookie = new Cookie("JSESSIONID", null);
+            sessionCookie.setMaxAge(0); // Set the cookie's max age to 0 to delete it
+            sessionCookie.setPath(request.getContextPath()); // Ensure the path matches the cookie's path
+            response.addCookie(sessionCookie);
         }
-        response.sendRedirect("login.jsp"); // Reindirizza alla pagina di login
+        response.sendRedirect("login.jsp"); // Redirect to the login page
     }
 }
